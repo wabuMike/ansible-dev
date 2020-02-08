@@ -2,11 +2,18 @@
 - name: "Update all packages"
   apt:
     name: "*"
-    state: latest
+    state: latest # noqa 403
     update_cache: yes
 
 - name: "Install software-properties-common"
   apt:
     name: software-properties-common
+
+- name: "Add ppa:ansible/ansible"
+  apt_repository:
+    repo: ppa:ansible/ansible
+
+- name: "Install Ansible"
+  apt:
+    name: ansible
     update_cache: yes
-  
