@@ -1,0 +1,10 @@
+---
+- name: "Install molecule"
+  pip:
+    name: "molecule[lint]"
+    vritualenv: molecule
+
+- name: "Install molecule docker"
+  pip:
+    name: "molecule[docker]"
+    vritualenv: molecule
