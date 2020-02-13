@@ -2,9 +2,9 @@
 - name: "Install molecule"
   pip:
     name: "molecule[lint]"
-    vritualenv: molecule
+    virtualenv: molecule
 
 - name: "Install molecule docker"
   pip:
     name: "molecule[docker]"
-    vritualenv: molecule
+    virtualenv: molecule
