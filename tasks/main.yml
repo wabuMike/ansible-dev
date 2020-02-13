@@ -1,4 +1,3 @@
 ---
 - import_tasks: "{{ role_path }}/tasks/ansible.yml"
 - import_tasks: "{{ role_path }}/tasks/molecule.yml"
-  
