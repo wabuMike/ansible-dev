@@ -1,0 +1,14 @@
+---
+- name: "Update all packages"
+  apt:
+    name: "*"
+    state: latest # noqa 403
+    update_cache: yes
+
+- name: "Install software-properties-common"
+  apt:
+    name: software-properties-common
+
+- name: "Install pip"
+  apt:
+    name: python-pip
