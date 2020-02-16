@@ -14,6 +14,8 @@ def test_ansible_installed(host):
 
 
 def test_virtualenv_installed(host):
-    packages = host.pip_package.get_packages(pip_path='/opt/virtenv/molecule/bin/pip')
+    packages = host.pip_package.get_packages(
+        pip_path='/opt/virtenv/molecule/bin/pip'
+    )
 
     assert "molecule" in packages
