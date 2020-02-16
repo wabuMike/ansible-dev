@@ -6,9 +6,11 @@
 - name: "Install molecule"
   pip:
     name: "molecule[lint]"
-    virtualenv: molecule
+    virtualenv: /opt/virtenv/molecule
+    virtualenv_command: /usr/local/bin/virtualenv
 
 - name: "Install molecule docker"
   pip:
     name: "molecule[docker]"
-    virtualenv: molecule
+    virtualenv: /opt/virtenv/molecule
+    virtualenv_command: /usr/local/bin/virtualenv
