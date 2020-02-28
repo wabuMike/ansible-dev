@@ -3,6 +3,10 @@
   pip:
     name: "virtualenv"
 
+- name: "Install molecule requirement python3-pip"
+  apt: 
+    name: libssl-dev
+
 - name: "Install molecule"
   pip:
     name: "molecule[lint]"

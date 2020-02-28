@@ -5,6 +5,8 @@ An Ansible role to setup an Ansible development environment on a host.
 
 The motiviation of writing this role was to have a development environment built with Vagrant, which in turn can run this role to setup ansible + molecule.
 
+Molecule is installed into a virtual environment (virtualenv) at /opt/virtenv/molecule. Use `source /opt/virtenv/molecule/bin/activate` to activate it.
+
 I'll give an example on how to do this once I'm finished.
 
 After creating this role, I found out that it's pretty useless to build a remote development environment when half of the development tools is needed on the host to build this development environment. 

@@ -9,10 +9,6 @@
   apt:
     name: software-properties-common
 
-- name: "Install pip"
-  apt:
-    name: python-pip
-
 - name: "Install pip3"
   apt:
     name: python3-pip
