@@ -1,4 +1,4 @@
-ansible-dev
+ansible-dev [![Build Status](https://www.travis-ci.org/wabuMike/ansible-dev.svg?branch=master)](https://www.travis-ci.org/wabuMike/ansible-dev)
 =========
 
 An Ansible role to setup an Ansible development environment on a host.
