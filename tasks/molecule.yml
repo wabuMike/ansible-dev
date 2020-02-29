@@ -1,7 +1,7 @@
 ---
-- name: "Install virtualenv"
-  pip:
-    name: "virtualenv"
+#- name: "Install virtualenv"
+#  pip:
+#    name: "virtualenv"
 
 - name: "Install molecule requirement python3-pip"
   apt: 
@@ -11,14 +11,21 @@
   apt: 
     name: yamllint
 
+- name: "Upgrade setuptools"
+  pip:
+    name: "setuptools"
+    extra_args: "--user --upgrade"
+
 - name: "Install molecule"
   pip:
     name: "molecule[lint]"
-    virtualenv: /opt/virtenv/molecule
-    virtualenv_command: /usr/local/bin/virtualenv
+    extra_args: --user
+#    virtualenv: /opt/virtenv/molecule
+#    virtualenv_command: /usr/local/bin/virtualenv
 
 - name: "Install molecule docker"
   pip:
     name: "molecule[docker]"
-    virtualenv: /opt/virtenv/molecule
-    virtualenv_command: /usr/local/bin/virtualenv
+    extra_args: --user
+#    virtualenv: /opt/virtenv/molecule
+#    virtualenv_command: /usr/local/bin/virtualenv
