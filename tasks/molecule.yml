@@ -7,6 +7,10 @@
   apt: 
     name: libssl-dev
 
+- name: "Install yamllint"
+  apt: 
+    name: yamllint
+
 - name: "Install molecule"
   pip:
     name: "molecule[lint]"
